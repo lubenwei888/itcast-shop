@@ -5,12 +5,7 @@ html,body,#app{
     padding: 0; 
 }
 .head{
-    height: 40px;
-    width: 100%;
     background-color: #1989fa;
     color: #fff;
     font-size: 14px;
-    z-index: 1;
-    text-align: center;
-    line-height: 40px;
   }

@@ -10,10 +10,14 @@ import {
     Row,       
     Col,
     Tabbar,
-    TabbarItem
+    TabbarItem,
+    Icon,
+    NavBar
 } from 'vant';
 
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
+Vue.use(Icon)
+Vue.use(NavBar)
