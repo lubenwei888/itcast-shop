@@ -81,7 +81,6 @@ export default {
       // 把拼接的评论对象添加到获取到的评论数组的最前面
       this.commentList.unshift(cmt)
       this.inputComment = "";
-      this.getCommentInfo();
     }
   }
 };
