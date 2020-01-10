@@ -4,7 +4,9 @@ import Home from '../components/home.vue'
 import Member from  '../components/member/member.vue'
 import Shopcar from '../components/shopcar/shopcar.vue'
 import Search from '../components/search/search.vue'
-// import Index from '../components/index/index.vue'
+import Newslist from '../components/news/newslist.vue'
+import Photolist from '../components/photo/photolist.vue'
+import Goodslist from '../components/goods/goodslist.vue'
 Vue.use(VueRouter)
 
 
@@ -16,7 +18,9 @@ const router = new VueRouter({
     {path:'/member', component:Member},
     {path:'/shopcar', component:Shopcar},
     {path:'/search', component:Search},
-    
+    {path:'/newslist',component: Newslist},
+    {path:'/photo/list',component: Photolist},
+    {path:'/goods/list',component: Goodslist},
   ]
 })
 

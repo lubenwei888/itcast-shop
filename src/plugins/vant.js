@@ -1,18 +1,20 @@
 // 导入 Vue
 import Vue from 'vue'
 
-// // 导入 Button 组件
-// import { Button } from 'vant'
-
-// // 挂载 Button 组件
-// Vue.use(Button)
 import { 
     Row,       
     Col,
     Tabbar,
     TabbarItem,
     Icon,
-    NavBar
+    NavBar,
+    Swipe,
+    SwipeItem,
+    Lazyload,
+    Grid,
+    GridItem,
+    Button,
+    SubmitBar
 } from 'vant';
 
 Vue.use(Row)
@@ -21,3 +23,10 @@ Vue.use(Tabbar)
 Vue.use(TabbarItem)
 Vue.use(Icon)
 Vue.use(NavBar)
+Vue.use(Swipe)
+Vue.use(SwipeItem)
+Vue.use(Lazyload)
+Vue.use(Grid)
+Vue.use(GridItem)
+Vue.use(Button)
+Vue.use(SubmitBar)
