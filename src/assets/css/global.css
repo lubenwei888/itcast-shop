@@ -1,0 +1,18 @@
+/* 全局样式表 */
+html,body,.box{
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    overflow-x: hidden;
+
+}
+.head{
+    background-color: #1989fa;
+    color: #fff;
+    font-size: 14px;
+  }
+/* 图片分享头部导航栏 */
+.van-tab__text{
+    color:#7d7e80;
+}
