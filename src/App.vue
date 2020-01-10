@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>1234</h1>
+    <router-view>根组件</router-view>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -10,5 +11,6 @@ export default {
   }
 };
 </script>
+
 <style lang="less" scoped>
 </style>
