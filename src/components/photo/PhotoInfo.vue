@@ -16,12 +16,16 @@
     <!-- 内容详情模块 -->
     <div class="detail_container" v-html="photoInfo.content"></div>
     <!-- 评论模块 -->
+    <comment-box :id="this.id"></comment-box>
   </div>
 </template>
 
 <script>
 import { log } from "util";
 import { ImagePreview } from "vant";
+// 导入评论子组件
+import comment from '../comment/comment.vue'
+
 export default {
   data() {
     return {
@@ -34,6 +38,9 @@ export default {
       // 图片预览数组
       imagePreview: [],
     };
+  },
+  components:{
+    'comment-box':comment
   },
   created() {
     this.getPhotoInfo();
