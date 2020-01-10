@@ -6,3 +6,14 @@ import Vue from 'vue'
 
 // // 挂载 Button 组件
 // Vue.use(Button)
+import { 
+    Row,       
+    Col,
+    Tabbar,
+    TabbarItem
+} from 'vant';
+
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
