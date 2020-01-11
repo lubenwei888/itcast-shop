@@ -19,7 +19,7 @@
         <img src="../../public/menu2.png" />
         <p>图片分享</p>
       </van-grid-item>
-      <van-grid-item to="/goods/list">
+      <van-grid-item to="/good/list">
         <img src="../../public/menu3.png" />
         <p>商品购买</p>
       </van-grid-item>

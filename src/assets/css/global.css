@@ -12,3 +12,11 @@ html,body,.box{
     color: #fff;
     font-size: 14px;
   }
+/* 图片分享头部导航栏 */
+.van-tab__text{
+    color:#7d7e80;
+}
+
+.van-card__thumb .van-image__img{
+    object-fit: fill!important;
+}

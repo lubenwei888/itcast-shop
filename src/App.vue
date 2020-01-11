@@ -6,7 +6,9 @@
         title="黑马程序员.vant"
         :left-text="flagText"
         :left-arrow="flag"
+        :right-text="flagbutton"
         @click-left="onClickLeft"
+        @click-right="onClickRight"
         fixed
       />
     <!-- 中间内容 -->
@@ -17,10 +19,10 @@
 
      
     <!-- 底部区域 -->
-      <van-tabbar v-model="active" v-show="flagshop" route>
+      <van-tabbar v-model="active" route>
         <van-tabbar-item name="0" icon="wap-home" to="/home">首页</van-tabbar-item>
         <van-tabbar-item name="1" icon="friends" to="/member">会员</van-tabbar-item>
-        <van-tabbar-item name="2" icon="shopping-cart" info="5" to="/shopcar">购物车</van-tabbar-item>
+        <van-tabbar-item name="2" icon="shopping-cart" :info="this.$store.getters.getCount" to="/shopcar">购物车</van-tabbar-item>
         <van-tabbar-item name="3" icon="search" to="/search">搜索</van-tabbar-item>
       </van-tabbar>
   </div>
@@ -34,25 +36,36 @@ export default {
       // 返回按钮默认隐藏
       flag:false,
       flagText:'返回',
-      flagshop:true
+      flagbutton:'添加'
     };
   },
   created() {
     this.flag=this.$route.path === '/home'? false:true
   },
   methods: {
+    // 点击返回按钮
       onClickLeft(){
           this.$router.go(-1)          
-      },     
+      },   
+      // 点击添加按钮
+      onClickRight(){
+        this.$router.push('/addgoods')
+      }  
   },
   watch: {
     "$route.path":function(newVal){
       if(newVal === "/home"){
         this.flag=false
         this.flagText=''
-      }else{
+        this.flagbutton=''
+      }else if(newVal !== "/home" && newVal !== "/search"){
         this.flag=true
         this.flagText='返回'
+        this.flagbutton=''
+      }else if(newVal !== "/home" && newVal === "/search"){
+        this.flag=true
+        this.flagText='返回'
+        this.flagbutton='添加'
       }
     },
   },

@@ -2,7 +2,19 @@
 import Vue from 'vue'
 
 import { 
-    Row,       
+    Tab, 
+    Tabs, 
+    Toast,
+    Notify,
+    List,
+    Image,
+    Lazyload,
+    Loading,
+    ImagePreview,
+    CellGroup,
+    Field,
+    Button,
+    Row, 
     Col,
     Tabbar,
     TabbarItem,
@@ -10,18 +22,37 @@ import {
     NavBar,
     Swipe,
     SwipeItem,
-    Lazyload,
     Grid,
     GridItem,
-    Button,
     SubmitBar,
     ContactCard,
     ContactList,
     ContactEdit,
     Popup,
-    Notify
-} from 'vant';
+    Search,
+    SwipeCell,
+    Cell,
+    Tag,
+    Divider,
+    PullRefresh,
+    Card,
+    Dialog,
+    Stepper
+} from 'vant'
 
+
+Vue.use(Button)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(Toast)
+Vue.use(Notify)
+Vue.use(List)
+Vue.use(Image)
+Vue.use(Lazyload)
+Vue.use(Loading)
+Vue.use(ImagePreview)
+Vue.use(Field)
+Vue.use(CellGroup)
 Vue.use(Row)
 Vue.use(Col)
 Vue.use(Tabbar)
@@ -30,13 +61,20 @@ Vue.use(Icon)
 Vue.use(NavBar)
 Vue.use(Swipe)
 Vue.use(SwipeItem)
-Vue.use(Lazyload)
 Vue.use(Grid)
 Vue.use(GridItem)
-Vue.use(Button)
 Vue.use(SubmitBar)
 Vue.use(ContactCard)
 Vue.use(ContactList)
 Vue.use(ContactEdit)
 Vue.use(Popup)
-Vue.use(Notify)
+Vue.use(Search)
+Vue.use(SwipeCell)
+Vue.use(Tag)
+Vue.use(Divider)
+Vue.use(PullRefresh)
+Vue.use(Card)
+Vue.use(Cell)
+Vue.use(Dialog)
+Vue.use(Stepper)
+

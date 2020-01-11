@@ -67,8 +67,10 @@ export default {
       // 读取sessionStorage
        const str = sessionStorage.obj;     
       //重新转换为对象
-      const obj1 = JSON.parse(str);
-      this.list=obj1
+      if(str !== ''){
+        const obj1 = JSON.parse(str);
+        this.list=obj1        
+      }
       
     },
     // 添加联系人
