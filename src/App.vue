@@ -55,13 +55,6 @@ export default {
         this.flagText='返回'
       }
     },
-    "$route.path":function(newval){
-      if(newval=== "shopcar"){
-        this.flagshop=false
-      }else{
-        this.flagshop=true
-      }
-    }
   },
 };
 </script>

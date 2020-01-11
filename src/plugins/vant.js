@@ -14,7 +14,12 @@ import {
     Grid,
     GridItem,
     Button,
-    SubmitBar
+    SubmitBar,
+    ContactCard,
+    ContactList,
+    ContactEdit,
+    Popup,
+    Notify
 } from 'vant';
 
 Vue.use(Row)
@@ -30,3 +35,8 @@ Vue.use(Grid)
 Vue.use(GridItem)
 Vue.use(Button)
 Vue.use(SubmitBar)
+Vue.use(ContactCard)
+Vue.use(ContactList)
+Vue.use(ContactEdit)
+Vue.use(Popup)
+Vue.use(Notify)
